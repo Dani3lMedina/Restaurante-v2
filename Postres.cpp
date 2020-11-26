@@ -19,19 +19,18 @@ private: //Atributos
 	
 
 public: //Metodos
-	Postre(int, int, int, int); //Constructor
+	Postre( int, int, int, int, int); //Constructor
 	void selection();
 };
 
 //Constructor
-	Postre::Postre (int _helado_fresa, int _helado_chocolate, int _flan, int _galleta, int _nada){
-
-		int papas_fritas = _helado_fresa;
-		int aros_cebolla = _helado_chocolate;
-        int nuggets = _flan;
-        int ensalada = _galleta;
-        int nada = _nada;
-    }
+ Postre::Postre(int _helado_fresa, int _helado_chocolate, int _flan, int _galleta, int _nada){
+	int papas_fritas = _helado_fresa;
+	int aros_cebolla = _helado_chocolate;
+    int nuggets = _flan;
+    int ensalada = _galleta;
+    int nada = _nada;
+}
 //Pedir ingredientes
 
 void Postre::selection() {
@@ -71,6 +70,6 @@ void Postre::selection() {
 //Pruebas
 
 int main() {
-	Acomp a1 = Acomp (1,2,3,4,5);
-	a1.selection();
-}
+	Postre p1 = Postre(1,2,3,4,5);
+	p1.selection();
+} 

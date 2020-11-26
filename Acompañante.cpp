@@ -19,19 +19,19 @@ private: //Atributos
 	
 
 public: //Metodos
-	Acomp(int, int, int, int); //Constructor
+	int Constructor(int, int, int, int); //Constructor
 	void selection();
 };
 
 //Constructor
-	Acomp::Acomp (int _papas_fritas, int _aros_cebolla, int _nuggets, int _ensalada, int _nada){
+int Acomp::Constructor(int _papas_fritas, int _aros_cebolla, int _nuggets, int _ensalada, int _nada){
 
-		int papas_fritas = _papas_fritas;
-		int aros_cebolla = _aros_cebolla;
-        int nuggets = _nuggets;
-        int ensalada = _ensalada;
-        int nada = _nada;
-    }
+	int papas_fritas = _papas_fritas;
+	int aros_cebolla = _aros_cebolla;
+    int nuggets = _nuggets;
+    int ensalada = _ensalada;
+    int nada = _nada;
+}
 //Pedir ingredientes
 
 void Acomp::selection() {
